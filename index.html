@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./icons8-form-48.png" type="image/x-icon">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <form>
+        <div id="form_header">
+            <h1>
+                Website Survey Questionnaire
+            </h1>
+            <p>
+                Thank you for taking the time to answer these questions. The following questions are about to know how
+                well known and
+                successful is [Site Name]
+            </p>
+            <!-- user Details -->
+            <div id="user__details">
+                <p>Please Fill in your details.
+                    <span class="required">Required*</span>
+                </p>
+                <label for="user-name"> Name</label>
+                <input type="text" id="user-name" required>
+                <label for="user-email"> Email</label>
+                <input type="email" id="user-email" required>
+            </div>
+        </div>
+        <div id="form_body">
+            <!-- q1 -->
+            <div class="form__div">
+                <p class="question">
+                    1. Have you heard about our site?
+                </p>
+                <div class="answer__block">
+                    <label class="radio-btn" for="yes">
+                        <input type="radio" name="heard-yes" id="yes">
+                        <div class="radio-box"></div>
+                        Yes
+                    </label>
+                    <label class="radio-btn" for="no">
+                        <input type="radio" name="heard-yes" id="no">
+                        <div class="radio-box"></div>
+                        No
+                    </label>
+                </div>
+            </div>
+            <!-- q2 -->
+            <div class="form__div">
+                <p class="question">
+                    2. Do you purchase goods from our site?
+                </p>
+                <div class="answer__block">
+                    <label class="radio-btn" for="purchase-yes">
+                        <input type="radio" name="purchase-yes" id="purchase-yes">
+                        <div class="radio-box"></div>
+                        Yes
+                    </label>
+                    <label class="radio-btn" for="purchase-no">
+                        <input type="radio" name="purchase-yes" id="purchase-no">
+                        <div class="radio-box"></div>
+                        No
+                    </label>
+                </div>
+            </div>
+            <!-- q3 -->
+            <div class="form__div">
+                <p class="question">
+                    3. How did you learn about site?
+                </p>
+                <div class="answer__block">
+                    <select name="learned from">
+                        <option value="">Please Select</option>
+                        <option value="Web">Web</option>
+                        <option value="Friend or Relative">Friend or Relative</option>
+                        <option value="Newspaper">Newspaper</option>
+                        <option value="Banners">Banners</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <!-- q4 -->
+            <div class="form__div">
+                <p class="question">
+                    4. How often do you visit our site?
+                </p>
+                <div class="answer__block">
+                    <select name="visit rate">
+                        <option value="">Please Select</option>
+                        <option value="Daily">Daily</option>
+                        <option value="Once a week">Once a week</option>
+                        <option value="Once a week">Once a week</option>
+                        <option value="Once a year">Once a year</option>
+                        <option value="Never">Never</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- q5 -->
+            <div class="form__div">
+                <p class="question">
+                    5. Overall, how satisfied are you with our website?
+                </p>
+                <div class="answer__block">
+                    <select name="satisfaction">
+                        <option value="">Please Select</option>
+                        <option value="Very less">Very less</option>
+                        <option value="Less">Less</option>
+                        <option value="Happy">Happy</option>
+                        <option value="Very Happy">Very Happy</option>
+                        <option value="Excellent">Excellent</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- q6 -->
+            <div class="form__div">
+                <p class="question">
+                    6. How likely would you be to recommend our Site to your friends or colleagues?
+                </p>
+                <div class="answer__block">
+                    <select name="recommendation">
+                        <option value="">Please Select</option>
+                        <option value="Very Unlikely">Very Unlikely</option>
+                        <option value="Unlikely">Unlikely</option>
+                        <option value="likely">likely</option>
+                        <option value="Very likely">Very likely</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- q7 -->
+            <div class="form__div">
+                <p class="question">
+                    7. What factors motivated you to purchase on our site?
+                </p>
+                <div class="answer__block">
+                    <select name="factors motivated">
+                        <option value="">Please Select</option>
+                        <option value="Pricing">Pricing</option>
+                        <option value="Brands">Brands</option>
+                        <option value="Product Quality">Product Quality</option>
+                        <option value="Discounts">Discounts</option>
+                        <option value="Discounts">Site Customer Service</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- q8 -->
+            <div class="form__div">
+                <p class="question">
+                    8. How satisfied were you with the return process?
+                </p>
+                <div class="answer__block">
+                    <select name="return process review">
+                        <option value="">Please Select</option>
+                        <option value="Very dissatisfied">Very dissatisfied</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="Overall Okay">Overall Okay</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Very Satisfied">Very Satisfied</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- q9 -->
+            <div class="form__div">
+                <p class="question">
+                    9.How do you pay your purchase?
+                </p>
+                <div class="answer__block">
+                    <label class="radio-btn" for="Credit Card">
+                        <input type="radio" name="pay-yes" id="Credit Card">
+                        <div class="radio-box"></div>
+                        Credit Card
+                    </label>
+                    <label class="radio-btn" for="Debit Card">
+                        <input type="radio" name="pay-yes" id="Debit Card">
+                        <div class="radio-box"></div>
+                        Debit Card
+                    </label>
+                    <label class="radio-btn" for="Net banking">
+                        <input type="radio" name="pay-yes" id="Net banking">
+                        <div class="radio-box"></div>
+                        Net banking
+                    </label>
+                    <label class="radio-btn" for="Google Pay, Phone Pay, PayTM">
+                        <input type="radio" name="pay-yes" id="Google Pay, Phone Pay, PayTM">
+                        <div class="radio-box"></div>
+                        Google Pay, Phone Pay, PayTM
+                    </label>
+                    <label class="radio-btn" for="Cash">
+                        <input type="radio" name="pay-yes" id="Cash">
+                        <div class="radio-box"></div>
+                        Cash
+                    </label>
+                </div>
+            </div>
+            <!-- q10 -->
+            <div class="form__div">
+                <p class="question">
+                    10.Any reviews or comments you want to add about site?
+                </p>
+                <div class="answer__block">
+                    <textarea id="Comments" cols="30" rows="10" placeholder="Write Here...."></textarea>
+                </div>
+            </div>
+
+            <div id="form__action">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        This survey form is made by Saket Chandorkar.
+        <span class="required">Don't Try To Use It Without My Concent.</span>
+    </footer>
+</body>
+
+</html>

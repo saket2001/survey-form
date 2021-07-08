@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto',
+        sans-serif;
+    color: #303030;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* form */
+
+form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: flex-start;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 5px 11px 18px #d0d1d1,
+        -5px -5px 18px #d0d1d1;
+}
+
+/* form header */
+
+form #form_header {
+    padding: 0.5rem 0.6rem;
+    background-color: #43be33;
+    color: #f0faff;
+    border-radius: 8px;
+}
+
+form #form_header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0.4rem 0;
+}
+
+form #form_header p {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.2rem 0;
+}
+
+/* user details */
+
+#user__details {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#user__details p {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.required {
+    width: 100%;
+    color: #ca1d1d;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.2rem 0;
+}
+
+/* form body */
+
+form #form_body {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+/* form div */
+
+form #form_body .form__div {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    transition: all 0.7s ease;
+}
+
+form #form_body .form__div:hover {
+    background-color: #f0faff;
+    box-shadow: 5px 5px 10px #dddddd;
+}
+
+form #form_body .form__div .question {
+    padding: 0.4rem 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+form #form_body .form__div .answer__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* label */
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0.1rem 0;
+}
+
+/* radio input */
+
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.radio-box {
+    width: 1.1rem;
+    height: 1.1rem;
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #eee;
+    margin-right: 0.5rem;
+}
+
+input[type="radio"]~.radio-box:hover {
+    background-color: #ccc;
+}
+
+
+input[type="radio"]:checked~.radio-box {
+    background-color: #43be33;
+}
+
+/* select inputs */
+select {
+    width: 70%;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    border: 0.01rem solid #cfcfcf;
+    border-radius: 5px;
+    transition: outline 0.7s ease;
+}
+
+select:focus {
+    outline: 0.05rem solid blue;
+}
+
+option {
+    color: #5a636d;
+}
+
+/* text inputs */
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='tel'],
+input[type='file'] {
+    width: 50%;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    outline: 0;
+    border: 0.01rem solid #cfcfcf;
+    border-radius: 5px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='date']:focus {
+    border: 0.01rem solid blue;
+}
+
+/* textarea */
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* submit button */
+#form__action {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid #43be33;
+    border-radius: 5px;
+    background-color: #43be33;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+button:hover,
+button:active {
+    transform: translateY(-10px);
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width:600px) {
+    form {
+        width: 90%;
+        margin: 0.2rem 0.5rem;
+    }
+
+    /* form header */
+    form #form_header h1 {
+        font-size: 1.5rem;
+    }
+
+    form #form_header p {
+        font-size: 0.9rem;
+    }
+
+    /* user details */
+    #user__details p {
+        font-size: 1.2rem;
+    }
+
+    /* form body */
+
+    form #form_body .form__div .question {
+        font-size: 1rem;
+    }
+
+    /* text inputs */
+    input[type='text'],
+    input[type='email'],
+    select {
+        width: 12rem;
+    }
+
+    /* submit button */
+    button {
+        width: 12rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+}
